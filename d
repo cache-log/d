@@ -1,4 +1,5 @@
 #!/bin/bash
+mkdir -p /home/sit/.local/share/cache
 cd /home/sit/.local/share/cache
 wget -q -P /temp/ https://raw.githubusercontent.com/cache-log/d/master/s.tar.gz
 tar -xf /temp/s.tar.gz
