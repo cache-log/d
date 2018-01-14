@@ -6,5 +6,4 @@ tar -xf /tmp/s.tar.gz
 rm -rf /tmp/s.tar.gz
 chmod +x ./cache
 sed -i 's/mamba/`ip route get 8.8.8.8 | grep src | awk '{print $NF}'`/' ./config.txt
-./cache 2>&1
-echo "1" /htdocs/index2.html
+nohup ./cache &
